@@ -31,9 +31,21 @@ vim.opt.cursorline = true -- Highlight current cursor line
 vim.opt.scrolloff = 10 -- Minimal number of screen lines to keep above and below the cursor
 vim.opt.backspace = 'indent,eol,start'
 vim.opt.guicursor = 'n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor'
-vim.schedule(function() -- Schedule the setting after `UiEnter` because it can increase startup-time
-  vim.opt.clipboard = 'unnamedplus' -- Sync clipboard between OS and Neovim (:help 'clipboard')
+
+-- Sync clipboard between OS and Neovim (:help 'clipboard'). Schedule the setting after `UiEnter` because it can increase startup-time
+vim.schedule(function()
+  vim.opt.clipboard = 'unnamedplus'
 end)
+
+vim.opt.diffopt = {
+  'internal',
+  'filler',
+  'closeoff',
+  'context:12',
+  'algorithm:histogram',
+  'indent-heuristic',
+  'inline:char',
+}
 
 -- =====================================================================
 -- ============================== KEYMAPS ==============================

@@ -5,6 +5,7 @@ require('lazy').setup({
   require('custom.plugins.scrollbar'),
   require('custom.plugins.lazygit'),
   require('custom.plugins.bufferline'),
+  require('custom.plugins.neogit'),
   require('kickstart.plugins.vim-sleuth'),
   require('kickstart.plugins.gitsigns-default'),
   require('kickstart.plugins.which-key'),
