@@ -95,6 +95,7 @@ alias gbi:cp-commons-to-be='bash ~/Documents/work/scripts/gbi/gbi:cp-commons-to-
 alias gbi:cp-df-fe-components-srcs-to-fe='bash ~/Documents/work/scripts/gbi/gbi:cp-df-fe-components-srcs-to-fe.sh'
 
 alias gbi:cp-ui-widget-components-srcs-to-fe='bash ~/Documents/work/scripts/gbi/gbi:cp-ui-widget-components-srcs-to-fe.sh'
+alias gbi:cp-ui-widget-components-srcs-to-df-fe='bash ~/Documents/work/scripts/gbi/gbi:cp-ui-widget-components-srcs-to-df-fe.sh'
 
 alias gbi:cp-df-api-components-to-be='bash ~/Documents/work/scripts/gbi/gbi:cp-df-api-components-to-be.sh'
 

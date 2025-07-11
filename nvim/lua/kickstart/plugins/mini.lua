@@ -15,9 +15,9 @@ return {
       mappings = {
         add = 'u',
         delete = 'du',
-        find = 'lu',
-        find_left = 'Lu',
-        replace = 'hu',
+        find = 'fu',
+        find_left = 'tu',
+        replace = 'ru',
         update_n_lines = '',
         highlight = '',
       },

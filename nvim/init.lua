@@ -62,10 +62,10 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 vim.keymap.set('v', 'p', 'P') -- Make text replace to not modify clipboard
 
 -- Move focus. See ':help wincmd'
-vim.keymap.set('n', 'R', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', 'T', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-vim.keymap.set('n', 'S', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', 'F', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
+vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
+vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
+vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- Save file
 vim.keymap.set('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
@@ -85,21 +85,7 @@ vim.keymap.set({ 'n', 'v' }, 'x', 'd', { noremap = true })
 vim.keymap.set('n', 'X', 'D', { noremap = true })
 vim.keymap.set('n', 'xx', 'dd', { noremap = true })
 
-vim.keymap.set('n', 'k', '"_x') -- Remap x command to k key
-
--- Remap rsft -> hjkl
-vim.keymap.set({ 'n', 'v', 'o' }, 'r', 'h', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'v', 'o' }, 's', 'j', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'v', 'o' }, 'f', 'k', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'v', 'o' }, 't', 'l', { noremap = true, silent = true })
-
--- Remap hjl -> ftr
-vim.keymap.set({ 'n', 'v', 'o' }, 'l', 'f', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'v', 'o' }, 'L', 'F', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'v', 'o' }, 'j', 't', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'v', 'o' }, 'J', 'T', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'v', 'o' }, 'h', 'r', { noremap = true, silent = true })
-vim.keymap.set({ 'n', 'v', 'o' }, 'H', 'R', { noremap = true, silent = true })
+-- vim.keymap.set('n', 'k', '"_x') -- Remap x command to k key
 
 -- Map Ctrl+Z to undo
 vim.keymap.set('n', '<C-z>', 'u', { noremap = true, silent = true })
@@ -177,7 +163,7 @@ require('lazy-plugins')
 
 -- IDEAS
 -- Explorer
-vim.keymap.set('n', '<leader>ee', '<cmd>Neotree last reveal left toggle show<CR>', { desc = '[E]xplorer: Toggle' })
+vim.keymap.set('n', '<leader>et', '<cmd>Neotree last reveal left toggle show<CR>', { desc = '[E]xplorer: [T]oggle' })
 vim.keymap.set('n', '<leader>ef', '<cmd>Neotree filesystem reveal left show<CR>', { desc = '[E]xplorer: [F]iles' })
 vim.keymap.set('n', '<leader>eb', '<cmd>Neotree buffers reveal left show<CR>', { desc = '[E]xplorer: [B]uffers' })
 vim.keymap.set('n', '<leader>eg', '<cmd>Neotree git_status reveal left show<CR>', { desc = '[E]xplorer: [G]it' })
