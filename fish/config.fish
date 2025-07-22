@@ -24,6 +24,7 @@ alias cd-code='cd ~/Documents/personal/code'
 alias cd-clones='cd ~/Documents/clones'
 alias cd-fish='cd ~/.config/fish/'
 alias learn-init='bash ~/Documents/personal/scripts/learn-init.sh'
+alias p:init='bash ~/Documents/personal/scripts/p:init.sh'
 
 # ========== work (general) ==========
 alias cd-w='cd ~/Documents/work'
@@ -91,6 +92,7 @@ alias gbi:code-init='bash ~/Documents/work/scripts/gbi/gbi:code-init.sh'
 
 alias gbi:cp-commons-to-fe='bash ~/Documents/work/scripts/gbi/gbi:cp-commons-to-fe.sh'
 alias gbi:cp-commons-to-be='bash ~/Documents/work/scripts/gbi/gbi:cp-commons-to-be.sh'
+alias gbi:cp-commons-to-gbm-api='bash ~/Documents/work/scripts/gbi/gbi:cp-commons-to-gbm-api.sh'
 
 alias gbi:cp-df-fe-components-srcs-to-fe='bash ~/Documents/work/scripts/gbi/gbi:cp-df-fe-components-srcs-to-fe.sh'
 
@@ -105,5 +107,8 @@ alias gbi:cp-df-common-components-to-df-fe='bash ~/Documents/work/scripts/gbi/gb
 
 alias gbi:cp-df-common-components-to-be='bash ~/Documents/work/scripts/gbi/gbi:cp-df-common-components-to-be.sh'
 alias gbi:cp-df-common-components-to-fe='bash ~/Documents/work/scripts/gbi/gbi:cp-df-common-components-to-fe.sh'
+
+alias gbi:init='bash ~/Documents/personal/scripts/gbi:init.sh'
+alias gbi:init-full='bash ~/Documents/personal/scripts/gbi:init-full.sh'
 
 
